@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box; /* include paddign e border nella larghezza e altezza totali dell'elemento */
+}
+
+body {background: #1C2046}
+
+
+/*Font*/
+
+body, a, p, h1, h2, h3 {font-family: 'Exo 2';}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #FDF0CE;
+}
+
+bodysmall{
+    font-size: 12px;
+    line-height: 14px;
+    color: #4049A1;
+}
+
+h1, h2, h3 {
+    font-style: normal;
+    font-weight: bold;
+    color: #FDF0CE;
+}
+
+h1{
+    font-size: 64px;
+    letter-spacing: -0.02em;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 48px;
+    align-items: center;
+    letter-spacing: -0.01em;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+a, bodystrong{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    letter-spacing: -0.01em;
+    color: #4049A1;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+}
+
+
+
+/*+++HEADER+++*/
+header {
+    background: #F7C644;
+    width: 100%;
+    /*height: 90px;*/
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+/*Contenitore elementi menu*/
+header .menu {
+    width: 100%;
+    display: inline-flex;
+    height: 90px;
+}
+
+
+/*Menù sinistra*/
+header .menu ul{
+    width: 40%;
+    text-align: left;
+    margin-left: 150px;
+}
+
+/*Elementi menù sinistra*/
+header .menu-item {
+    display: inline-flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 8%;
+}
+
+/*Testi elementi sinistra*/
+header .menu-item a {
+   text-decoration: none;
+}
+
+/* Elemento attivo*/
+header .menu-item.active {
+    background: #FDF0CE;
+}
+
+/* Testo elemento attivo*/
+header .menu-item.active a {
+    text-transform: uppercase;
+}
+
+/*Elemento menu destra*/
+header .menu ul#last{
+    width: 20%;
+    text-align: right;
+    margin-right: 160px;
+}
+
+/*Contenitore logo*/
+header .logo{
+    text-align: left;
+    width: 16%;
+}
+
+
+/*+++FOOTER+++*/
+footer {
+    margin-top: 100px;
+    background: #F7C644;
+    height: 179px;
+
+}
+
+/*Sezione superiore footer*/
+.container.footer-up {
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Sezione direttore footer*/
+.icon-people.director{
+    margin-left: 50px;
+}
+
+/*Sezione link footer*/
+.link-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+
+}
+
+/*Sezione attori footer*/
+.actor-footer{
+    display: flex;
+    width: 23%;
+    justify-content: space-around;
+}
+/*Proprietà attori footer*/
+.icon-people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Separatore footer*/
+.footer-separator{
+    height: 1px;
+    text-align: center;
+    width: 100%;
+    background: #F6FDFE;
+}
+
+/*Sezione inferiore footer*/
+.container.footer-down {
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Sezione social footer*/
+.social-footer{
+    display: flex;
+    width: 23%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*+++BODY+++*/
+/*Sezione verticale home*/
+.container.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Cpntenitore immagine*/
+.img_big {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+/*Immagine nel contenitore*/
+.img_big img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+/*Paragrafo home*/
+main #par-home{
+    margin-top: 36px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+
+/*Pulsante IMDB*/
+.button {
+    margin-top: 64px;
+    background: #F7C644;
+    height: 50px;
+    width: 205px;
+    line-height: 50px;
+
+}
+#text_button {
+    justify-content: center;
+}
+
+
+
+/***PAGINA FILM***/
+main #Descrizione{
+    margin-top: 36px;
+    width: 76.4%;
+    text-align: center;
+    border: 2px solid #F6FDFE;
+    box-sizing: border-box;
+    padding: 25px 50px 25px 50px;
+}
+
+/*Cpntenitore immagine pagina Film*/
+.img_film {
+    width: 76.4%;
+    margin-top: 50px;
+    height: 416px;
+    overflow: hidden;
+
+}
+/*Immagine Film-Descrizione*/
+.img_film img{
+    /*max-width: 1110px;
+    position: relative;
+    bottom: 105px;*/
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+/*Separatore sezioni*/
+.separator{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    height: 5px;
+    width: 90px;
+    background: #F6FDFE;
+}
+
+.cast.principali{
+    margin-top: 10px;
+    width: 76.4%;
+}
+.separator-cast{
+    margin-top: 5px;
+    width: 50%;
+    height: 2px;
+    background: #F6FDFE;
+}
+
+.sezione.cast {
+    width: 76.4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scheda{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 29.1%;
+}
+/*Cpntenitore immagine pagina Film*/
+.img_cast {
+    margin-top: 10px;
+}
+
+.img_cast img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.nome_cast{
+    margin-top: 10px;
+}
+
+.testo_cast{
+    margin-top: 10px;
+
+}
+
+
+.cast.altri{
+    margin-top: 20px;
+    width: 76.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.separator-cast-altri{
+    margin-top: 5px;
+    width: 50%;
+    height: 2px;
+    background: #F6FDFE;
+}
+
+
+
+
+/***CARD***/
+
+.card{
+    margin-top: 50px;
+    width: 76.4%;
+    display: flex;
+}
+
+.img_card img{
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+}
+
+.text_card{
+    background: #F6FDFE;
+
+    width: 70.9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 340px;
+
+}
+
+.title_card, .body_card{
+    color: #2D3D8B;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top:35px;
+}
+
+.link-section {
+    margin-top: 30px;
+    width: 76.4%;
+    display: flex;
+    justify-content: space-between;
+}
